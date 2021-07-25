@@ -6,7 +6,7 @@ const UserConatainer = (props) => {
   useEffect(() => {
     props.fetchUsers();
     // console.log(props)
-  }, [props]);
+  }, []);
   return props.userData.loading ? (
     <h2>Loading</h2>
   ) : props.userData.error ? (
